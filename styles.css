@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #ToDoApp {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+
+  #clock {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+  }
+
+  #taskInput {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+  }
+
+  #addTaskBtn {
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #taskList {
+    list-style: none;
+    padding: 0;
+  }
+
+  .taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .taskItem span {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  .completeTaskBtn, .deleteTaskBtn {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .completeTaskBtn {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    margin-right: 5px;
+  }
+
+  .deleteTaskBtn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+  }
+
+  @media (max-width: 600px) {
+    #taskInput {
+      width: 60%;
+    }
+  }
